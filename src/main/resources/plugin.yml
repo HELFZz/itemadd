@@ -1,0 +1,17 @@
+name: ItemAdd
+version: 1.0.0
+main: net.invisiblesmp.itemadd.ItemAddPlugin
+api-version: '1.21'
+author: invisiblesmp
+description: Добавляет предметам кастомные эффекты и команды, срабатывающие при ударе по игроку
+
+commands:
+  itemadd:
+    description: Настроить эффекты/команды удерживаемого предмета
+    usage: /itemadd <effect|command|clear|info> ...
+    permission: itemadd.use
+
+permissions:
+  itemadd.use:
+    description: Доступ к команде /itemadd
+    default: op
